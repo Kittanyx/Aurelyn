@@ -54,7 +54,7 @@ const I18N = {
     manifesto: {
       eyebrow: "Манифест",
       lines: ["МЫ НЕ", "ДЕЛАЕМ", "САЙТЫ.", "МЫ", "СТРОИМ", "ИНТЕРФЕЙСЫ,", "КОТОРЫЕ", "ЗАРАБАТЫВАЮТ."],
-      body: "Каждый кейс — уникальный подход и уникальная инженерия. Мы не копируем и не повторяемся. Стремимся к техническому совершенству, но с одной целью — чтобы интерфейс продавал, конвертил и работал на бизнес."
+      body: "Каждый кейс — уникальный подход и уникальная инженерия. Стремимся к техническому совершенству с одной целью — чтобы интерфейс продавал, конвертил и работал на бизнес."
     },
     cases: {
       eyebrow: "Избранные работы",
@@ -176,7 +176,7 @@ const I18N = {
     manifesto: {
       eyebrow: "Manifesto",
       lines: ["WE DON'T", "BUILD", "WEBSITES.", "WE", "ENGINEER", "INTERFACES", "THAT", "MAKE", "MONEY."],
-      body: "Every case demands a unique approach and bespoke engineering. We don't copy and we don't repeat ourselves. We pursue technical perfection with one goal — the interface must sell, convert, and work for the business."
+      body: "Every case demands a unique approach and bespoke engineering. We pursue technical perfection with one goal — the interface must sell, convert, and work for the business."
     },
     cases: {
       eyebrow: "Selected work",
@@ -298,7 +298,7 @@ const I18N = {
     manifesto: {
       eyebrow: "Manifest",
       lines: ["BIZ", "SAYT", "QURMAYMIZ.", "BIZ", "PUL TOPADIGAN", "INTERFEYS", "ISHLAB", "CHIQARAMIZ.", ""],
-      body: "Har bir keys — noyob yondashuv va noyob injineriya. Biz nusxa ko'chirmaymiz va takrorlanmaymiz. Texnik mukammallikka intilamiz, lekin bitta maqsad bilan — interfeys sotsin, konvertatsiya qilsin va biznes uchun ishlasin."
+      body: "Har bir keys — noyob yondashuv va noyob injineriya. Texnik mukammallikka intilamiz, bitta maqsad bilan — interfeys sotsin, konvertatsiya qilsin va biznes uchun ishlasin."
     },
     cases: {
       eyebrow: "Tanlangan ishlar",
