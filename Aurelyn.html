@@ -22,12 +22,12 @@
     --sans: "Inter Tight", system-ui, -apple-system, sans-serif;
     --mono: "JetBrains Mono", ui-monospace, monospace;
   }
-  *{box-sizing:border-box}
+  *{box-sizing:border-box;user-select:none;-webkit-user-select:none}
   html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
   body{overflow-x:hidden}
   a{color:inherit;text-decoration:none}
   button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit}
-  ::selection{background:var(--red);color:#fff}
+
 
   /* Custom cursor */
   .cursor-dot, .cursor-ring{

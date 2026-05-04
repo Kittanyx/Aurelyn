@@ -33,7 +33,7 @@ function Services({
         .services{background:#0a0a0b;color:#fff}
         .services-head{display:grid;grid-template-columns:1fr 2fr;gap:6vw;align-items:end;margin-bottom:80px}
         @media (max-width:900px){ .services-head{grid-template-columns:1fr} }
-        .services-head h2{font-family:var(--display);font-size:clamp(40px, 6.2vw, 110px);line-height:.92;letter-spacing:-.025em;text-transform:uppercase;margin:24px 0 0}
+        .services-head h2{font-family:var(--display);font-size:clamp(40px, 6.2vw, 110px);line-height:.92;letter-spacing:3px;text-transform:uppercase;margin:24px 0 0}
         .services-head h2 .stroked{color:transparent;-webkit-text-stroke:1.5px #fff}
         .svc-list{border-top:1px solid var(--line)}
         .svc-row{
@@ -152,7 +152,7 @@ function Manifesto({
     className: "mani-body reveal"
   }, /*#__PURE__*/React.createElement("div", {
     className: "mani-stat"
-  }, /*#__PURE__*/React.createElement("strong", null, "72h"), "avg. response", /*#__PURE__*/React.createElement("br", null), "to first prototype"), /*#__PURE__*/React.createElement("p", null, t.manifesto.body))));
+  }, /*#__PURE__*/React.createElement("strong", null, "72h"), "\u043E\u0442 \u0431\u0440\u0438\u0444\u0430 \u0434\u043E", /*#__PURE__*/React.createElement("br", null), "\u0440\u0430\u0431\u043E\u0447\u0435\u0433\u043E \u043F\u0440\u043E\u0442\u043E\u0442\u0438\u043F\u0430"), /*#__PURE__*/React.createElement("p", null, t.manifesto.body))));
 }
 function Cases({
   t
@@ -164,7 +164,7 @@ function Cases({
   }, /*#__PURE__*/React.createElement("style", null, `
         .cases{background:#0a0a0b;color:#fff}
         .cases-head{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px;margin-bottom:60px}
-        .cases-head h2{font-family:var(--display);font-size:clamp(40px, 6vw, 110px);line-height:.92;letter-spacing:-.025em;text-transform:uppercase;margin:14px 0 0}
+        .cases-head h2{font-family:var(--display);font-size:clamp(40px, 6vw, 110px);line-height:.92;letter-spacing:3px;text-transform:uppercase;margin:14px 0 0}
         .case-grid{display:grid;grid-template-columns: repeat(12, 1fr);gap:24px}
         .case{
           position:relative;background:#101012;border:1px solid var(--line);overflow:hidden;
@@ -318,7 +318,7 @@ function Contact({
         }
         .contact .eyebrow{color:#fff}
         .contact .eyebrow::before{background:#fff;box-shadow:0 0 12px #fff}
-        .contact-h{font-family:var(--display);font-size:clamp(60px, 11vw, 220px);line-height:.85;letter-spacing:-.035em;text-transform:uppercase;margin:24px 0 0}
+        .contact-h{font-family:var(--display);font-size:clamp(60px, 11vw, 220px);line-height:.85;letter-spacing:3px;text-transform:uppercase;margin:24px 0 0}
         .contact-h .stroked{color:transparent;-webkit-text-stroke:2px #fff}
         .contact-grid{display:grid;grid-template-columns: 1.4fr 1fr;gap:6vw;margin-top:80px;align-items:start;position:relative}
         @media (max-width:900px){ .contact-grid{grid-template-columns:1fr} }
@@ -387,21 +387,7 @@ function Contact({
   }, /*#__PURE__*/React.createElement("label", null, t.contact.brief), /*#__PURE__*/React.createElement("textarea", {
     placeholder: "\u2014",
     required: true
-  })), /*#__PURE__*/React.createElement("label", {
-    className: "h-mono",
-    style: {
-      color: '#fff',
-      display: 'block',
-      marginBottom: 8
-    }
-  }, t.contact.budget), /*#__PURE__*/React.createElement("div", {
-    className: "budgets"
-  }, t.contact.budgets.map((b, i) => /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    key: i,
-    className: "budget-chip " + (i === budget ? "active" : ""),
-    onClick: () => setBudget(i)
-  }, b))), /*#__PURE__*/React.createElement("div", {
+  })), /*#__PURE__*/React.createElement("div", {
     className: "send-row"
   }, /*#__PURE__*/React.createElement(Magnetic, {
     className: "dark",
@@ -498,8 +484,6 @@ function Footer({
   }, "hello@aurelyn.studio"), /*#__PURE__*/React.createElement("a", {
     href: "https://t.me/aurelyn_studio"
   }, "Telegram"), /*#__PURE__*/React.createElement("a", {
-    href: "https://github.com"
-  }, "GitHub"), /*#__PURE__*/React.createElement("a", {
     href: "https://dribbble.com"
   }, "Dribbble"))))), /*#__PURE__*/React.createElement("div", {
     className: "footer-mark-wrap",

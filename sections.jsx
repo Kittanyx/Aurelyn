@@ -132,7 +132,7 @@ function Manifesto({ t }){
         <div className="mani-body reveal">
           <div className="mani-stat">
             <strong>72h</strong>
-            avg. response<br/>to first prototype
+            от брифа до<br/>рабочего прототипа
           </div>
           <p>{t.manifesto.body}</p>
         </div>
@@ -348,11 +348,6 @@ function Contact({ t, lang }){
               <label>{t.contact.brief}</label>
               <textarea placeholder="—" required></textarea>
             </div>
-            <label className="h-mono" style={{color:'#fff',display:'block',marginBottom:8}}>{t.contact.budget}</label>
-            <div className="budgets">
-              {t.contact.budgets.map((b, i) => (
-                <button type="button" key={i} className={"budget-chip " + (i===budget?"active":"")} onClick={()=>setBudget(i)}>{b}</button>
-              ))}
             </div>
             <div className="send-row">
               <Magnetic className="dark" type="submit" as="button">
@@ -415,7 +410,6 @@ function Footer({ t, lang, setLang }){
               <h4>Channels</h4>
               <a href="mailto:hello@aurelyn.studio">hello@aurelyn.studio</a>
               <a href="https://t.me/aurelyn_studio">Telegram</a>
-              <a href="https://github.com">GitHub</a>
               <a href="https://dribbble.com">Dribbble</a>
             </div>
           </div>

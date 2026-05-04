@@ -57,7 +57,7 @@ function Hero({
         .hero-h1{
           font-family:var(--display);
           font-size: clamp(36px, 5.6vw, 96px);
-          line-height:.86;letter-spacing:-.025em;text-transform:uppercase;
+          line-height:.86;letter-spacing:3px;text-transform:uppercase;
           margin:0;color:#fff;mix-blend-mode:plus-lighter;
         }
         .hero-h1 .stroked{color:transparent;-webkit-text-stroke:2px #fff}
@@ -181,11 +181,7 @@ function Hero({
     style: {
       justifyContent: 'flex-end'
     }
-  }, /*#__PURE__*/React.createElement("span", null, "UZ \xB7 TASHKENT"), /*#__PURE__*/React.createElement("span", {
-    style: {
-      opacity: .55
-    }
-  }, "43\xB016'N"))), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("span", null, "UZ \xB7 TASHKENT"))), /*#__PURE__*/React.createElement("div", {
     className: "hero-mid"
   }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", {
     className: "hero-h1"
@@ -231,7 +227,7 @@ function Hero({
     className: "hero-bottom-row"
   }, /*#__PURE__*/React.createElement("span", {
     className: "live"
-  }, "SYSTEMS \xB7 ONLINE \xA0\xB7\xA0 v 26.05 / RU \xB7 EN \xB7 UZ"), /*#__PURE__*/React.createElement("span", {
+  }, ""), /*#__PURE__*/React.createElement("span", {
     className: "scroll-cue"
   }, /*#__PURE__*/React.createElement("span", null, "SCROLL"), /*#__PURE__*/React.createElement("span", {
     className: "line"

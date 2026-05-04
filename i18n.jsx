@@ -3,7 +3,7 @@ const I18N = {
   ru: {
     nav: { work: "Работы", services: "Услуги", manifesto: "Манифест", contact: "Контакт" },
     hero: {
-      eyebrow: "Студия / Фронтенд-инженерия / 2026",
+      eyebrow: "",
       title1: "ИНТЕРФЕЙСЫ,",
       title2: "КОТОРЫЕ",
       title3: "ОТГРУЖАЮТСЯ",
@@ -17,13 +17,14 @@ const I18N = {
     marquee: ["WEB DEVELOPMENT", "SAAS PLATFORMS", "AI BOTS", "INTEGRATIONS", "DESIGN SYSTEMS", "MOTION", "INFRASTRUCTURE"],
     services: {
       eyebrow: "Что мы делаем",
-      title: "Четыре направления.",
+      title: "Пять направлений.",
       title2: "Один инженерный стандарт.",
       items: [
         { num:"01", name:"Сайты", desc:"Лендинги, корпоративные сайты, e-commerce. Pixel-perfect, 95+ Lighthouse, инженерный SEO.", tags:["Next.js","Astro","Shopify"] },
         { num:"02", name:"SaaS платформы", desc:"Полноценные продукты с авторизацией, биллингом, дашбордами, аналитикой и админкой. От MVP до Series A.", tags:["TypeScript","Postgres","Stripe"] },
         { num:"03", name:"Боты", desc:"Telegram-боты для продаж, поддержки, аналитики, AI-ассистенты. Подключаем GPT, Claude, локальные модели.", tags:["Telegram","OpenAI","n8n"] },
         { num:"04", name:"Интеграции", desc:"AmoCRM, Bitrix, 1С, Stripe, Webhook-цепочки, автоматизации между сервисами. Чтобы всё работало само.", tags:["REST","GraphQL","Zapier"] },
+        { num:"05", name:"AI-автоматизация", desc:"Голосовые и текстовые AI-агенты для поддержки, продаж и телефонии. Автоматическая квалификация лидов, суммаризация звонков, интеллектуальная маршрутизация обращений — без участия оператора.", tags:["LLM","RAG","VoIP"] },
       ]
     },
     manifesto: {
@@ -33,7 +34,7 @@ const I18N = {
         "МЫ", "СТРОИМ", "ИНТЕРФЕЙСЫ,",
         "КОТОРЫЕ", "ЗАРАБАТЫВАЮТ."
       ],
-      body: "Каждый компонент — собственная инженерия. Никаких бесплатных тем, никаких «примерно так». Только продукт, который не стыдно показать на demo day. Скорость, типографика, мотион, плотность — всё под контролем."
+      body: "Каждый кейс — уникальный подход и уникальная инженерия. Мы не копируем и не повторяемся. Стремимся к техническому совершенству, но с одной целью — чтобы интерфейс продавал, конвертил и работал на бизнес."
     },
     cases: {
       eyebrow: "Избранные работы",
@@ -65,7 +66,7 @@ const I18N = {
     },
     footer: {
       tag:"Сделано с инженерной аккуратностью.",
-      rights:"© 2026 Aurelyn. Все интерфейсы защищены.",
+      rights:"© 2026 Aurelyn. Все права защищены.",
       sitemap:"Карта",
       legal:"Юр.информация"
     }
@@ -87,13 +88,14 @@ const I18N = {
     marquee: ["WEB DEVELOPMENT", "SAAS PLATFORMS", "AI BOTS", "INTEGRATIONS", "DESIGN SYSTEMS", "MOTION", "INFRASTRUCTURE"],
     services: {
       eyebrow: "What we do",
-      title: "Four disciplines.",
+      title: "Five disciplines.",
       title2: "One engineering bar.",
       items: [
         { num:"01", name:"Websites", desc:"Landings, corporate sites, e-commerce. Pixel-perfect, 95+ Lighthouse, engineered SEO.", tags:["Next.js","Astro","Shopify"] },
         { num:"02", name:"SaaS platforms", desc:"Full products: auth, billing, dashboards, analytics, admin. From MVP to Series A.", tags:["TypeScript","Postgres","Stripe"] },
         { num:"03", name:"Bots", desc:"Telegram bots for sales, support, analytics, AI assistants. GPT, Claude, local models.", tags:["Telegram","OpenAI","n8n"] },
         { num:"04", name:"Integrations", desc:"AmoCRM, Bitrix, 1C, Stripe, webhook chains, cross-service automations. Make it run itself.", tags:["REST","GraphQL","Zapier"] },
+        { num:"05", name:"AI Automation", desc:"Voice and text AI agents for support, sales and telephony. Automated lead qualification, call summarization, intelligent ticket routing — no human operator needed.", tags:["LLM","RAG","VoIP"] },
       ]
     },
     manifesto: {
@@ -103,7 +105,7 @@ const I18N = {
         "WE", "ENGINEER", "INTERFACES",
         "THAT", "MAKE", "MONEY."
       ],
-      body: "Every component is owned engineering. No free themes, no \"close enough\". Only product worthy of demo day. Speed, type, motion, density — all under control."
+      body: "Every case demands a unique approach and bespoke engineering. We don't copy and we don't repeat ourselves. We pursue technical perfection with one goal — the interface must sell, convert, and work for the business."
     },
     cases: {
       eyebrow: "Selected work",
@@ -135,7 +137,7 @@ const I18N = {
     },
     footer: {
       tag:"Built with engineering rigor.",
-      rights:"© 2026 Aurelyn. All interfaces reserved.",
+      rights:"© 2026 Aurelyn. All rights reserved.",
       sitemap:"Sitemap",
       legal:"Legal"
     }
@@ -157,13 +159,14 @@ const I18N = {
     marquee: ["VEB ISHLAB CHIQISH", "SAAS PLATFORMALAR", "AI BOTLAR", "INTEGRATSIYA", "DIZAYN TIZIMI", "MOTION", "INFRASTRUKTURA"],
     services: {
       eyebrow: "Biz nima qilamiz",
-      title: "To'rt yo'nalish.",
+      title: "Beshta yo'nalish.",
       title2: "Bitta injineriya darajasi.",
       items: [
         { num:"01", name:"Saytlar", desc:"Lendinglar, korporativ saytlar, e-commerce. Pixel-perfect, 95+ Lighthouse, injinerlik SEO.", tags:["Next.js","Astro","Shopify"] },
         { num:"02", name:"SaaS platformalar", desc:"To'liq mahsulotlar: avtorizatsiya, billing, dashboard, analytics, admin. MVP'dan Series A'gacha.", tags:["TypeScript","Postgres","Stripe"] },
         { num:"03", name:"Botlar", desc:"Sotuv, qo'llab-quvvatlash, tahlil uchun Telegram-botlar va AI yordamchilar. GPT, Claude, lokal modellar.", tags:["Telegram","OpenAI","n8n"] },
         { num:"04", name:"Integratsiyalar", desc:"AmoCRM, Bitrix, 1C, Stripe, webhook'lar, avtomatizatsiya. Hammasi o'zi ishlasin.", tags:["REST","GraphQL","Zapier"] },
+        { num:"05", name:"AI-avtomatizatsiya", desc:"Qo'llab-quvvatlash, sotuv va telefoniya uchun ovozli va matnli AI-agentlar. Lidlarni avtomatik kvalifikatsiya qilish, qo'ng'iroqlarni umumlashtirish, so'rovlarni intellektual yo'naltirish.", tags:["LLM","RAG","VoIP"] },
       ]
     },
     manifesto: {
@@ -173,7 +176,7 @@ const I18N = {
         "BIZ", "PUL TOPADIGAN", "INTERFEYS",
         "ISHLAB", "CHIQARAMIZ.", ""
       ],
-      body: "Har bir komponent — bizning injineriyamiz. Tekin shablon yo'q. Faqat demo day'ga loyiq mahsulot. Tezlik, tipografika, motion va zichlik — barchasi nazoratda."
+      body: "Har bir keys — noyob yondashuv va noyob injineriya. Biz nusxa ko'chirmaymiz va takrorlanmaymiz. Texnik mukammallikka intilamiz, lekin bitta maqsad bilan — interfeys sotsin, konvertatsiya qilsin va biznes uchun ishlasin."
     },
     cases: {
       eyebrow: "Tanlangan ishlar",

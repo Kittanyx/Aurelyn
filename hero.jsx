@@ -47,7 +47,7 @@ function Hero({ t, lang }){
         .hero-h1{
           font-family:var(--display);
           font-size: clamp(36px, 5.6vw, 96px);
-          line-height:.86;letter-spacing:-.025em;text-transform:uppercase;
+          line-height:.86;letter-spacing:3px;text-transform:uppercase;
           margin:0;color:#fff;mix-blend-mode:plus-lighter;
         }
         .hero-h1 .stroked{color:transparent;-webkit-text-stroke:2px #fff}
@@ -167,7 +167,6 @@ function Hero({ t, lang }){
           <div className="meta">{t.hero.eyebrow}</div>
           <div className="meta" style={{justifyContent:'flex-end'}}>
             <span>UZ · TASHKENT</span>
-            <span style={{opacity:.55}}>43°16'N</span>
           </div>
         </div>
 
@@ -209,7 +208,7 @@ function Hero({ t, lang }){
         <h2 className="hero-mark" aria-hidden="true">AURELYN<span className="x">.</span></h2>
 
         <div className="hero-bottom-row">
-          <span className="live">SYSTEMS · ONLINE &nbsp;·&nbsp; v 26.05 / RU · EN · UZ</span>
+          <span className="live"></span>
           <span className="scroll-cue"><span>SCROLL</span><span className="line"></span></span>
         </div>
       </div>
