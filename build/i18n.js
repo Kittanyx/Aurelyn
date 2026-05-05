@@ -27,64 +27,42 @@ const I18N = {
       items: [{
         num: "01",
         name: "Сайты",
-        desc: "Лендинги, корпоративные сайты, e-commerce. Pixel-perfect, 95+ Lighthouse, инженерный SEO.",
-        tags: ["Next.js", "Astro", "Shopify"]
+        desc: "Проектируем и разрабатываем веб-ресурсы: от корпоративных сайтов до e-commerce. Строим стабильную архитектуру на современных фреймворках (React, Next.js), обеспечивая высокую скорость загрузки, отказоустойчивость и правильную индексацию.",
+        tags: ["Next.js", "E-Commerce", "Лендинги"]
       }, {
         num: "02",
         name: "SaaS платформы",
-        desc: "Полноценные продукты с авторизацией, биллингом, дашбордами, аналитикой и админкой. От MVP до Series A.",
-        tags: ["TypeScript", "Postgres", "Stripe"]
+        desc: "Разработка полноценных веб-приложений и облачных сервисов под ваши процессы. Реализуем сложную бизнес-логику, безопасную авторизацию, интеграцию платежных шлюзов (Stripe, локальные системы) и интерактивные дашборды для работы с данными.",
+        tags: ["Облачные решения", "Базы данных", "Безопасная авторизация"]
       }, {
         num: "03",
         name: "Боты",
-        desc: "Telegram-боты для продаж, поддержки, аналитики, AI-ассистенты. Подключаем GPT, Claude, локальные модели.",
-        tags: ["Telegram", "OpenAI", "n8n"]
+        desc: "Разработка многофункциональных Telegram-ботов. Создаем инструменты для технической поддержки, оформления заказов и маршрутизации обращений с возможностью прямого подключения внешних API и языковых моделей.",
+        tags: ["Telegram API", "MiniApp", "N8N"]
       }, {
         num: "04",
         name: "Интеграции",
-        desc: "AmoCRM, Bitrix, 1С, Stripe, Webhook-цепочки, автоматизации между сервисами. Чтобы всё работало само.",
-        tags: ["REST", "GraphQL", "Zapier"]
+        desc: "Настройка надежного обмена данными между вашими сервисами. Связываем CRM-системы, учетные программы (1С), сайты и кассы через REST API и Webhooks, чтобы информация обновлялась автоматически и без потери пакетов.",
+        tags: ["REST API / Webhooks", "CRM", "Обмен данными"]
       }, {
         num: "05",
         name: "AI-автоматизация",
-        desc: "Голосовые и текстовые AI-агенты для поддержки, продаж и телефонии. Автоматическая квалификация лидов, суммаризация звонков, интеллектуальная маршрутизация обращений — без участия оператора.",
-        tags: ["LLM", "RAG", "VoIP"]
+        desc: "Интеграция алгоритмов машинного обучения в корпоративную среду. Разворачиваем и настраиваем нейросети (LLM) под вашу внутреннюю базу знаний (RAG) для автоматической обработки текста, анализа запросов и помощи сотрудникам.",
+        tags: ["LLM модели", "RAG-системы", "VoIP"]
       }]
     },
     manifesto: {
       eyebrow: "Манифест",
       lines: ["МЫ НЕ", "ДЕЛАЕМ", "САЙТЫ.", "МЫ", "СТРОИМ", "ИНТЕРФЕЙСЫ,", "КОТОРЫЕ", "ЗАРАБАТЫВАЮТ."],
+      stat: "от брифа до\nрабочего прототипа",
       body: "Каждый кейс — уникальный подход и уникальная инженерия. Стремимся к техническому совершенству с одной целью — чтобы интерфейс продавал, конвертил и работал на бизнес."
     },
     cases: {
-      eyebrow: "Избранные работы",
-      title: "Свежие отгрузки",
-      view: "Открыть кейс",
-      items: [{
-        tag: "SAAS",
-        year: "2026",
-        name: "FleetOps",
-        brief: "Дашборд для логистических парков. Реальный тайминг, маршрутизация, биллинг.",
-        metric: "+38% удержание"
-      }, {
-        tag: "WEB",
-        year: "2026",
-        name: "Korium Capital",
-        brief: "Сайт инвест-фонда. Тёмная типографика, motion-driven сторителлинг.",
-        metric: "$12M raised"
-      }, {
-        tag: "BOT",
-        year: "2025",
-        name: "Asal AI",
-        brief: "Telegram-ассистент для аптечной сети — рецепты, заказы, склады.",
-        metric: "230k MAU"
-      }, {
-        tag: "SAAS",
-        year: "2025",
-        name: "Brushwork",
-        brief: "AI-платформа для архитектурных рендеров. Очередь, кредиты, S3.",
-        metric: "110k рендеров/мес"
-      }]
+      eyebrow: "Портфолио",
+      title: "Наши кейсы",
+      empty1: "тут пока пусто, но вы можете стать первым ;)",
+      emptySoon: "Скоро...",
+      items: [{ idx: 1 }, { idx: 2 }, { idx: 3 }, { idx: 4 }]
     },
     testimonials: {
       eyebrow: "Слово клиентов",
@@ -112,11 +90,15 @@ const I18N = {
       brief: "Расскажите о задаче",
       budget: "Бюджет",
       send: "Отправить заявку",
+      sent: "✓ ОТПРАВЛЕНО",
+      reply: "→ Ответим в течение 24ч",
       budgets: ["до $5k", "$5–15k", "$15–50k", "$50k+", "Нужна оценка"],
-      direct: "Или напрямую:"
+      direct: "Или напрямую:",
+      location: "UZ · Ташкент — работаем удалённо по всему миру.\nUTC +5 / ответ в течение 24ч."
     },
     footer: {
       tag: "Сделано с инженерной аккуратностью.",
+      channels: "Каналы",
       rights: "© 2026 Aurelyn. Все права защищены.",
       sitemap: "Карта",
       legal: "Юр.информация"
@@ -149,64 +131,42 @@ const I18N = {
       items: [{
         num: "01",
         name: "Websites",
-        desc: "Landings, corporate sites, e-commerce. Pixel-perfect, 95+ Lighthouse, engineered SEO.",
-        tags: ["Next.js", "Astro", "Shopify"]
+        desc: "We design and develop web resources: from corporate sites to e-commerce. We build stable architecture on modern frameworks (React, Next.js), ensuring fast load times, fault tolerance and proper indexing.",
+        tags: ["Next.js", "E-Commerce", "Landings"]
       }, {
         num: "02",
         name: "SaaS platforms",
-        desc: "Full products: auth, billing, dashboards, analytics, admin. From MVP to Series A.",
-        tags: ["TypeScript", "Postgres", "Stripe"]
+        desc: "Full-cycle development of web applications and cloud services tailored to your processes. We implement complex business logic, secure authentication, payment gateway integration (Stripe, local systems) and interactive dashboards for data management.",
+        tags: ["Cloud solutions", "Databases", "Secure auth"]
       }, {
         num: "03",
         name: "Bots",
-        desc: "Telegram bots for sales, support, analytics, AI assistants. GPT, Claude, local models.",
-        tags: ["Telegram", "OpenAI", "n8n"]
+        desc: "Development of multifunctional Telegram bots. We build tools for technical support, order processing and request routing with direct integration of external APIs and language models.",
+        tags: ["Telegram API", "MiniApp", "N8N"]
       }, {
         num: "04",
         name: "Integrations",
-        desc: "AmoCRM, Bitrix, 1C, Stripe, webhook chains, cross-service automations. Make it run itself.",
-        tags: ["REST", "GraphQL", "Zapier"]
+        desc: "Setting up reliable data exchange between your services. We connect CRM systems, accounting software (1C), websites and POS terminals via REST API and Webhooks so data updates automatically without packet loss.",
+        tags: ["REST API / Webhooks", "CRM", "Data exchange"]
       }, {
         num: "05",
         name: "AI Automation",
-        desc: "Voice and text AI agents for support, sales and telephony. Automated lead qualification, call summarization, intelligent ticket routing — no human operator needed.",
-        tags: ["LLM", "RAG", "VoIP"]
+        desc: "Integration of machine learning algorithms into the corporate environment. We deploy and configure neural networks (LLM) for your internal knowledge base (RAG) to automate text processing, query analysis and employee assistance.",
+        tags: ["LLM models", "RAG systems", "VoIP"]
       }]
     },
     manifesto: {
       eyebrow: "Manifesto",
       lines: ["WE DON'T", "BUILD", "WEBSITES.", "WE", "ENGINEER", "INTERFACES", "THAT", "MAKE", "MONEY."],
+      stat: "from brief to\nworking prototype",
       body: "Every case demands a unique approach and bespoke engineering. We pursue technical perfection with one goal — the interface must sell, convert, and work for the business."
     },
     cases: {
-      eyebrow: "Selected work",
-      title: "Recent shipments",
-      view: "Open case",
-      items: [{
-        tag: "SAAS",
-        year: "2026",
-        name: "FleetOps",
-        brief: "Dashboard for logistics fleets. Real-time, routing, billing.",
-        metric: "+38% retention"
-      }, {
-        tag: "WEB",
-        year: "2026",
-        name: "Korium Capital",
-        brief: "Investment fund website. Dark type, motion-driven storytelling.",
-        metric: "$12M raised"
-      }, {
-        tag: "BOT",
-        year: "2025",
-        name: "Asal AI",
-        brief: "Telegram assistant for a pharmacy chain — prescriptions, orders, stock.",
-        metric: "230k MAU"
-      }, {
-        tag: "SAAS",
-        year: "2025",
-        name: "Brushwork",
-        brief: "AI platform for architectural renders. Queue, credits, S3.",
-        metric: "110k renders/mo"
-      }]
+      eyebrow: "Portfolio",
+      title: "Our cases",
+      empty1: "nothing here yet, but you could be the first ;)",
+      emptySoon: "Coming soon...",
+      items: [{ idx: 1 }, { idx: 2 }, { idx: 3 }, { idx: 4 }]
     },
     testimonials: {
       eyebrow: "What clients say",
@@ -234,11 +194,15 @@ const I18N = {
       brief: "Tell us about the project",
       budget: "Budget",
       send: "Send brief",
+      sent: "✓ SENT",
+      reply: "→ Reply within 24h",
       budgets: ["under $5k", "$5–15k", "$15–50k", "$50k+", "Need estimate"],
-      direct: "Or directly:"
+      direct: "Or directly:",
+      location: "UZ · Tashkent — working remotely worldwide.\nUTC +5 / response within 24h."
     },
     footer: {
       tag: "Built with engineering rigor.",
+      channels: "Channels",
       rights: "© 2026 Aurelyn. All rights reserved.",
       sitemap: "Sitemap",
       legal: "Legal"
@@ -271,64 +235,42 @@ const I18N = {
       items: [{
         num: "01",
         name: "Saytlar",
-        desc: "Lendinglar, korporativ saytlar, e-commerce. Pixel-perfect, 95+ Lighthouse, injinerlik SEO.",
-        tags: ["Next.js", "Astro", "Shopify"]
+        desc: "Veb-resurslarni loyihalaymiz va ishlab chiqamiz: korporativ saytlardan e-commerce'gacha. Zamonaviy freymvorklarda (React, Next.js) barqaror arxitektura quramiz, yuqori yuklash tezligi, nosozliklarga chidamlilik va to'g'ri indeksatsiyani ta'minlaymiz.",
+        tags: ["Next.js", "E-Commerce", "Lendinglar"]
       }, {
         num: "02",
         name: "SaaS platformalar",
-        desc: "To'liq mahsulotlar: avtorizatsiya, billing, dashboard, analytics, admin. MVP'dan Series A'gacha.",
-        tags: ["TypeScript", "Postgres", "Stripe"]
+        desc: "Jarayonlaringizga moslashtirilgan to'liq veb-ilovalar va bulutli xizmatlarni ishlab chiqish. Murakkab biznes-mantiq, xavfsiz avtorizatsiya, to'lov shlyuzlari integratsiyasi (Stripe, mahalliy tizimlar) va ma'lumotlar bilan ishlash uchun interaktiv dashboardlar.",
+        tags: ["Bulutli yechimlar", "Ma'lumotlar bazasi", "Xavfsiz avtorizatsiya"]
       }, {
         num: "03",
         name: "Botlar",
-        desc: "Sotuv, qo'llab-quvvatlash, tahlil uchun Telegram-botlar va AI yordamchilar. GPT, Claude, lokal modellar.",
-        tags: ["Telegram", "OpenAI", "n8n"]
+        desc: "Ko'p funksiyali Telegram-botlarni ishlab chiqish. Texnik qo'llab-quvvatlash, buyurtmalarni rasmiylashtirish va so'rovlarni yo'naltirish uchun vositalar yaratamiz, tashqi API va til modellarini to'g'ridan-to'g'ri ulash imkoniyati bilan.",
+        tags: ["Telegram API", "MiniApp", "N8N"]
       }, {
         num: "04",
         name: "Integratsiyalar",
-        desc: "AmoCRM, Bitrix, 1C, Stripe, webhook'lar, avtomatizatsiya. Hammasi o'zi ishlasin.",
-        tags: ["REST", "GraphQL", "Zapier"]
+        desc: "Xizmatlaringiz o'rtasida ishonchli ma'lumot almashuvini sozlash. CRM-tizimlar, buxgalteriya dasturlari (1C), saytlar va kassalarni REST API va Webhooks orqali bog'laymiz, shunda ma'lumotlar avtomatik yangilanadi.",
+        tags: ["REST API / Webhooks", "CRM", "Ma'lumot almashish"]
       }, {
         num: "05",
         name: "AI-avtomatizatsiya",
-        desc: "Qo'llab-quvvatlash, sotuv va telefoniya uchun ovozli va matnli AI-agentlar. Lidlarni avtomatik kvalifikatsiya qilish, qo'ng'iroqlarni umumlashtirish, so'rovlarni intellektual yo'naltirish.",
-        tags: ["LLM", "RAG", "VoIP"]
+        desc: "Korporativ muhitga mashinali o'rganish algoritmlarini integratsiya qilish. Matnni avtomatik qayta ishlash, so'rovlarni tahlil qilish va xodimlarga yordam berish uchun ichki bilimlar bazangizga (RAG) neyron tarmoqlarni (LLM) joylashtiramiz va sozlaymiz.",
+        tags: ["LLM modellari", "RAG-tizimlar", "VoIP"]
       }]
     },
     manifesto: {
       eyebrow: "Manifest",
       lines: ["BIZ", "SAYT", "QURMAYMIZ.", "BIZ", "PUL TOPADIGAN", "INTERFEYS", "ISHLAB", "CHIQARAMIZ.", ""],
+      stat: "brifdan tayyor\nprototypgacha",
       body: "Har bir keys — noyob yondashuv va noyob injineriya. Texnik mukammallikka intilamiz, bitta maqsad bilan — interfeys sotsin, konvertatsiya qilsin va biznes uchun ishlasin."
     },
     cases: {
-      eyebrow: "Tanlangan ishlar",
-      title: "So'nggi loyihalar",
-      view: "Keysni ochish",
-      items: [{
-        tag: "SAAS",
-        year: "2026",
-        name: "FleetOps",
-        brief: "Logistika parklari uchun dashboard. Real vaqt, marshrutlash, billing.",
-        metric: "+38% retention"
-      }, {
-        tag: "WEB",
-        year: "2026",
-        name: "Korium Capital",
-        brief: "Investitsiya fondi sayti. Qora tipografika, motion-storytelling.",
-        metric: "$12M jalb qilindi"
-      }, {
-        tag: "BOT",
-        year: "2025",
-        name: "Asal AI",
-        brief: "Dorixonalar tarmog'i uchun Telegram yordamchi — retseptlar, buyurtmalar, ombor.",
-        metric: "230k MAU"
-      }, {
-        tag: "SAAS",
-        year: "2025",
-        name: "Brushwork",
-        brief: "Arxitektura renderlari uchun AI platforma. Navbat, kreditlar, S3.",
-        metric: "110k render/oy"
-      }]
+      eyebrow: "Portfolio",
+      title: "Бизнинг проектларимиз",
+      empty1: "ҳозирча бу ерда ҳеч нарса йўқ, аммо сиз биринчи бўлишингиз мумкин ;)",
+      emptySoon: "Тез кунда...",
+      items: [{ idx: 1 }, { idx: 2 }, { idx: 3 }, { idx: 4 }]
     },
     testimonials: {
       eyebrow: "Mijozlar fikri",
@@ -356,11 +298,15 @@ const I18N = {
       brief: "Loyiha haqida yozing",
       budget: "Byudjet",
       send: "Yuborish",
+      sent: "✓ YUBORILDI",
+      reply: "→ 24 soat ichida javob beramiz",
       budgets: ["$5k gacha", "$5–15k", "$15–50k", "$50k+", "Baholash kerak"],
-      direct: "Yoki to'g'ridan-to'g'ri:"
+      direct: "Yoki to'g'ridan-to'g'ri:",
+      location: "UZ · Toshkent — butun dunyo bo'ylab masofadan ishlaymiz.\nUTC +5 / 24 soat ichida javob."
     },
     footer: {
       tag: "Injinerlik aniqligi bilan yasaldi.",
+      channels: "Kanallar",
       rights: "© 2026 Aurelyn. Barcha interfeyslar himoyalangan.",
       sitemap: "Sayt xaritasi",
       legal: "Yuridik"

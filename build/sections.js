@@ -152,7 +152,7 @@ function Manifesto({
     className: "mani-body reveal"
   }, /*#__PURE__*/React.createElement("div", {
     className: "mani-stat"
-  }, /*#__PURE__*/React.createElement("strong", null, "72h"), "\u043E\u0442 \u0431\u0440\u0438\u0444\u0430 \u0434\u043E", /*#__PURE__*/React.createElement("br", null), "\u0440\u0430\u0431\u043E\u0447\u0435\u0433\u043E \u043F\u0440\u043E\u0442\u043E\u0442\u0438\u043F\u0430"), /*#__PURE__*/React.createElement("p", null, t.manifesto.body))));
+  }, /*#__PURE__*/React.createElement("strong", null, "72h"), t.manifesto.stat.split('\n').map((line, i) => /*#__PURE__*/React.createElement(React.Fragment, { key: i }, line, i === 0 && /*#__PURE__*/React.createElement("br", null)))), /*#__PURE__*/React.createElement("p", null, t.manifesto.body))));
 }
 function Cases({
   t
@@ -219,35 +219,7 @@ function Cases({
     style: {
       color: 'var(--ink-dim)'
     }
-  }, "04 / 04")), /*#__PURE__*/React.createElement("div", {
-    className: "case-grid reveal-stagger"
-  }, t.cases.items.map((c, i) => /*#__PURE__*/React.createElement("a", {
-    key: i,
-    className: `case case-${i + 1}`,
-    href: "#contact",
-    onMouseEnter: () => setHover(i),
-    onMouseLeave: () => setHover(-1)
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "case-canvas"
-  }), /*#__PURE__*/React.createElement("div", {
-    className: "case-art"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "label"
-  }, c.tag, " \xB7 PLACEHOLDER")), /*#__PURE__*/React.createElement("div", {
-    className: "case-meta"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "tag"
-  }, "\u25CF ", c.tag), /*#__PURE__*/React.createElement("span", null, c.year)), /*#__PURE__*/React.createElement("h3", {
-    className: "case-name"
-  }, c.name), /*#__PURE__*/React.createElement("p", {
-    className: "case-brief"
-  }, c.brief), /*#__PURE__*/React.createElement("div", {
-    className: "case-foot"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "case-metric"
-  }, c.metric), /*#__PURE__*/React.createElement("span", {
-    className: "case-open"
-  }, t.cases.view)))))));
+  }, "04 / 04")), /*#__PURE__*/React.createElement("div", { className: "case-grid reveal-stagger" }, t.cases.items.map((c, i) => /*#__PURE__*/React.createElement("div", { key: i, className: `case case-${i + 1}`, style: { cursor: 'default' } }, /*#__PURE__*/React.createElement("div", { className: "case-canvas" }), /*#__PURE__*/React.createElement("div", { className: "case-art" }, /*#__PURE__*/React.createElement("span", { className: "label" }, i === 0 ? '01' : `0${i + 1}`)), /*#__PURE__*/React.createElement("div", { style: { flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' } }, i === 0 ? /*#__PURE__*/React.createElement("p", { className: "case-brief", style: { textAlign: 'center', maxWidth: '100%', opacity: .78, fontStyle: 'italic' } }, t.cases.empty1) : /*#__PURE__*/React.createElement("h3", { className: "case-name", style: { opacity: .35, textAlign: 'center', width: '100%' } }, t.cases.emptySoon))))))); 
 }
 function Testimonials({
   t
@@ -393,11 +365,11 @@ function Contact({
     className: "dark",
     type: "submit",
     as: "button"
-  }, sent ? "✓ SENT" : t.contact.send, " ", /*#__PURE__*/React.createElement("span", {
+  }, sent ? t.contact.sent : t.contact.send, " ", /*#__PURE__*/React.createElement("span", {
     className: "arrow"
   })), sent && /*#__PURE__*/React.createElement("span", {
     className: "ok"
-  }, "\u2192 Reply within 24h"))), /*#__PURE__*/React.createElement("div", {
+  }, t.contact.reply))), /*#__PURE__*/React.createElement("div", {
     className: "contact-side reveal"
   }, /*#__PURE__*/React.createElement("p", {
     style: {
@@ -415,7 +387,7 @@ function Contact({
       opacity: .7,
       marginTop: 24
     }
-  }, "UZ \xB7 Tashkent \u2014 working remotely worldwide.", /*#__PURE__*/React.createElement("br", null), "UTC +5 / response within 24h.")))));
+  }, t.contact.location.split('\\n').map((line, i) => /*#__PURE__*/React.createElement(React.Fragment, { key: i }, line, i === 0 && /*#__PURE__*/React.createElement("br", null))))))));
 }
 function Footer({
   t,
@@ -459,16 +431,6 @@ function Footer({
     className: "ft-cols"
   }, /*#__PURE__*/React.createElement("div", {
     className: "ft-col"
-  }, /*#__PURE__*/React.createElement("h4", null, t.nav.work), /*#__PURE__*/React.createElement("a", {
-    href: "#cases"
-  }, "FleetOps"), /*#__PURE__*/React.createElement("a", {
-    href: "#cases"
-  }, "Korium"), /*#__PURE__*/React.createElement("a", {
-    href: "#cases"
-  }, "Asal AI"), /*#__PURE__*/React.createElement("a", {
-    href: "#cases"
-  }, "Brushwork")), /*#__PURE__*/React.createElement("div", {
-    className: "ft-col"
   }, /*#__PURE__*/React.createElement("h4", null, t.nav.services), /*#__PURE__*/React.createElement("a", {
     href: "#services"
   }, "Web"), /*#__PURE__*/React.createElement("a", {
@@ -479,7 +441,7 @@ function Footer({
     href: "#services"
   }, "Integrations")), /*#__PURE__*/React.createElement("div", {
     className: "ft-col"
-  }, /*#__PURE__*/React.createElement("h4", null, "Channels"), /*#__PURE__*/React.createElement("a", {
+  }, /*#__PURE__*/React.createElement("h4", null, t.footer.channels || "Channels"), /*#__PURE__*/React.createElement("a", {
     href: "mailto:hello@aurelyn.studio"
   }, "hello@aurelyn.studio"), /*#__PURE__*/React.createElement("a", {
     href: "https://t.me/aurelyn_studio"

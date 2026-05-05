@@ -132,7 +132,7 @@ function Manifesto({ t }){
         <div className="mani-body reveal">
           <div className="mani-stat">
             <strong>72h</strong>
-            от брифа до<br/>рабочего прототипа
+            {t.manifesto.stat.split('\n').map((line, i) => <React.Fragment key={i}>{line}{i === 0 && <br/>}</React.Fragment>)}
           </div>
           <p>{t.manifesto.body}</p>
         </div>
@@ -203,28 +203,22 @@ function Cases({ t }){
         </div>
         <div className="case-grid reveal-stagger">
           {t.cases.items.map((c, i) => (
-            <a
+            <div
               key={i}
               className={`case case-${i+1}`}
-              href="#contact"
-              onMouseEnter={()=>setHover(i)}
-              onMouseLeave={()=>setHover(-1)}
+              style={{cursor:'default'}}
             >
               <div className="case-canvas"></div>
               <div className="case-art">
-                <span className="label">{c.tag} · PLACEHOLDER</span>
+                <span className="label">{i === 0 ? '01' : `0${i+1}`}</span>
               </div>
-              <div className="case-meta">
-                <span className="tag">● {c.tag}</span>
-                <span>{c.year}</span>
+              <div style={{flex:1, display:'flex', alignItems:'center', justifyContent:'center'}}>
+                {i === 0
+                  ? <p className="case-brief" style={{textAlign:'center', maxWidth:'100%', opacity:.78, fontStyle:'italic'}}>{t.cases.empty1}</p>
+                  : <h3 className="case-name" style={{opacity:.35, textAlign:'center', width:'100%'}}>{t.cases.emptySoon}</h3>
+                }
               </div>
-              <h3 className="case-name">{c.name}</h3>
-              <p className="case-brief">{c.brief}</p>
-              <div className="case-foot">
-                <span className="case-metric">{c.metric}</span>
-                <span className="case-open">{t.cases.view}</span>
-              </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>
@@ -351,9 +345,9 @@ function Contact({ t, lang }){
             </div>
             <div className="send-row">
               <Magnetic className="dark" type="submit" as="button">
-                {sent ? "✓ SENT" : t.contact.send} <span className="arrow"></span>
+                {sent ? t.contact.sent : t.contact.send} <span className="arrow"></span>
               </Magnetic>
-              {sent && <span className="ok">→ Reply within 24h</span>}
+              {sent && <span className="ok">{t.contact.reply}</span>}
             </div>
           </form>
 
@@ -362,7 +356,7 @@ function Contact({ t, lang }){
             <a href="mailto:hello@aurelyn.studio"><strong>hello@aurelyn.studio</strong>email</a>
             <a href="https://t.me/aurelyn_studio"><strong>@aurelyn_studio</strong>telegram</a>
             <a href="tel:+998900000000"><strong>+998 90 000 00 00</strong>phone</a>
-            <p style={{opacity:.7,marginTop:24}}>UZ · Tashkent — working remotely worldwide.<br/>UTC +5 / response within 24h.</p>
+            <p style={{opacity:.7,marginTop:24}}>{t.contact.location.split('\n').map((line, i) => <React.Fragment key={i}>{line}{i === 0 && <br/>}</React.Fragment>)}</p>
           </div>
         </div>
       </div>
@@ -393,13 +387,6 @@ function Footer({ t, lang, setLang }){
           </div>
           <div className="ft-cols">
             <div className="ft-col">
-              <h4>{t.nav.work}</h4>
-              <a href="#cases">FleetOps</a>
-              <a href="#cases">Korium</a>
-              <a href="#cases">Asal AI</a>
-              <a href="#cases">Brushwork</a>
-            </div>
-            <div className="ft-col">
               <h4>{t.nav.services}</h4>
               <a href="#services">Web</a>
               <a href="#services">SaaS</a>
@@ -407,7 +394,7 @@ function Footer({ t, lang, setLang }){
               <a href="#services">Integrations</a>
             </div>
             <div className="ft-col">
-              <h4>Channels</h4>
+              <h4>{t.footer.channels || "Channels"}</h4>
               <a href="mailto:hello@aurelyn.studio">hello@aurelyn.studio</a>
               <a href="https://t.me/aurelyn_studio">Telegram</a>
               <a href="https://dribbble.com">Dribbble</a>
