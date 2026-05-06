@@ -92,7 +92,8 @@ function Services({
   })))))));
 }
 function Manifesto({
-  t
+  t,
+  lang
 }) {
   const sectionRef = useRefS(null);
   const p = useElementProgress(sectionRef);
@@ -152,7 +153,7 @@ function Manifesto({
     className: "mani-body reveal"
   }, /*#__PURE__*/React.createElement("div", {
     className: "mani-stat"
-  }, /*#__PURE__*/React.createElement("strong", null, "72h"), t.manifesto.stat.split('\n').map((line, i) => /*#__PURE__*/React.createElement(React.Fragment, { key: i }, line, i === 0 && /*#__PURE__*/React.createElement("br", null)))), /*#__PURE__*/React.createElement("p", null, t.manifesto.body))));
+  }, /*#__PURE__*/React.createElement("strong", null, "72", /*#__PURE__*/React.createElement("span", { style: { fontSize: '60%', letterSpacing: '0' } }, lang === 'ru' ? '\u0447' : lang === 'uz' ? 's' : 'h')), t.manifesto.stat.split('\n').map((line, i) => /*#__PURE__*/React.createElement(React.Fragment, { key: i }, line, i === 0 && /*#__PURE__*/React.createElement("br", null)))), /*#__PURE__*/React.createElement("p", null, t.manifesto.body))));
 }
 function Cases({
   t
@@ -377,12 +378,12 @@ function Contact({
       marginTop: 0
     }
   }, t.contact.direct), /*#__PURE__*/React.createElement("a", {
-    href: "mailto:hello@aurelyn.studio"
-  }, /*#__PURE__*/React.createElement("strong", null, "hello@aurelyn.studio"), "email"), /*#__PURE__*/React.createElement("a", {
-    href: "https://t.me/aurelyn_studio"
-  }, /*#__PURE__*/React.createElement("strong", null, "@aurelyn_studio"), "telegram"), /*#__PURE__*/React.createElement("a", {
-    href: "tel:+998900000000"
-  }, /*#__PURE__*/React.createElement("strong", null, "+998 90 000 00 00"), "phone"), /*#__PURE__*/React.createElement("p", {
+    href: "mailto:submit@aurelyn.uz"
+  }, /*#__PURE__*/React.createElement("strong", null, "submit@aurelyn.uz"), "email"), /*#__PURE__*/React.createElement("a", {
+    href: "https://t.me/AurelynStudio"
+  }, /*#__PURE__*/React.createElement("strong", null, "@AurelynStudio"), "telegram"), /*#__PURE__*/React.createElement("a", {
+    href: "tel:+998908244434"
+  }, /*#__PURE__*/React.createElement("strong", null, "+998 90 824 44 34"), "phone"), /*#__PURE__*/React.createElement("p", {
     style: {
       opacity: .7,
       marginTop: 24
@@ -442,12 +443,20 @@ function Footer({
   }, "Integrations")), /*#__PURE__*/React.createElement("div", {
     className: "ft-col"
   }, /*#__PURE__*/React.createElement("h4", null, t.footer.channels || "Channels"), /*#__PURE__*/React.createElement("a", {
-    href: "mailto:hello@aurelyn.studio"
-  }, "hello@aurelyn.studio"), /*#__PURE__*/React.createElement("a", {
-    href: "https://t.me/aurelyn_studio"
-  }, "Telegram"), /*#__PURE__*/React.createElement("a", {
-    href: "https://dribbble.com"
-  }, "Dribbble"))))), /*#__PURE__*/React.createElement("div", {
+    href: "mailto:submit@aurelyn.uz"
+  }, "submit@aurelyn.uz"), /*#__PURE__*/React.createElement("a", {
+    href: "https://t.me/AurelynStudio"
+  }, "Telegram")), /*#__PURE__*/React.createElement("div", {
+    className: "ft-col"
+  }, /*#__PURE__*/React.createElement("h4", null, "CONTACT US"), /*#__PURE__*/React.createElement("a", {
+    href: "mailto:info@aurelyn.uz"
+  }, "info@aurelyn.uz"), /*#__PURE__*/React.createElement("a", {
+    href: "https://t.me/AurelynStudio"
+  }, "Telegram-Bot"), /*#__PURE__*/React.createElement("a", {
+    href: "#contact"
+  }, "via web-site"), /*#__PURE__*/React.createElement("a", {
+    href: "tel:+998908244434"
+  }, "Call"))))), /*#__PURE__*/React.createElement("div", {
     className: "footer-mark-wrap",
     "aria-hidden": "true"
   }, /*#__PURE__*/React.createElement("div", {

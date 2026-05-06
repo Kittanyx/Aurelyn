@@ -9,10 +9,10 @@ const I18N = {
     },
     hero: {
       eyebrow: "",
-      title1: "ИНТЕРФЕЙСЫ,",
+      title1: "[РЕШЕНИЯ],",
       title2: "КОТОРЫЕ",
-      title3: "ОТГРУЖАЮТСЯ",
-      sub: "Мы строим сайты, SaaS-платформы, ботов и интеграции для бизнесов, которые устали смотреть на чужой PSD-инфантилизм. Без шаблонов. С инженерией.",
+      title3: "ПРОДАЮТ",
+      sub: "Мы строим сайты, SaaS-платформы, умных ботов для автоматизации и интеграции для бизнеса любого масштаба. Уникальные решения и долгосрочный партнёрский подход.",
       cta: "Начать проект",
       cta2: "Смотреть кейсы",
       label1: "Готов к продакшену",
@@ -112,11 +112,11 @@ const I18N = {
       contact: "Contact"
     },
     hero: {
-      eyebrow: "Studio / Frontend engineering / 2026",
-      title1: "INTERFACES",
+      eyebrow: "",
+      title1: "[SOLUTIONS]",
       title2: "THAT",
       title3: "SHIP.",
-      sub: "We build websites, SaaS platforms, bots and integrations for businesses tired of generic templates. No fluff. Just engineering.",
+      sub: "We build websites, SaaS platforms, smart bots for automation and integrations for businesses of any scale. Unique solutions and a long-term partnership approach.",
       cta: "Start a project",
       cta2: "View cases",
       label1: "Production-ready",
@@ -216,11 +216,11 @@ const I18N = {
       contact: "Aloqa"
     },
     hero: {
-      eyebrow: "Studiya / Frontend-injineriya / 2026",
+      eyebrow: "",
       title1: "ISHLAYDIGAN",
-      title2: "INTERFEYSLAR.",
-      title3: "TAYYOR MAHSULOT.",
-      sub: "Biz biznes uchun saytlar, SaaS platformalar, botlar va integratsiyalarni yaratamiz. Shablon emas — injineriya.",
+      title2: "[YECHIMLAR]",
+      title3: "PRODUCTION-READY.",
+      sub: "Biz har qanday biznes uchun saytlar, SaaS platformalar, avtomatlashtirish uchun aqlli botlar va integratsiyalar yaratamiz. Noyob yechimlar va uzoq muddatli hamkorlik yondashuvi.",
       cta: "Loyihani boshlash",
       cta2: "Keyslarni ko'rish",
       label1: "Production-ready",
@@ -267,9 +267,9 @@ const I18N = {
     },
     cases: {
       eyebrow: "Portfolio",
-      title: "Бизнинг проектларимиз",
-      empty1: "ҳозирча бу ерда ҳеч нарса йўқ, аммо сиз биринчи бўлишингиз мумкин ;)",
-      emptySoon: "Тез кунда...",
+      title: "Bizning loyihalarimiz",
+      empty1: "hozircha bu yerda hech narsa yo'q, ammo siz birinchi bo'lishingiz mumkin ;)",
+      emptySoon: "Tez kunda...",
       items: [{ idx: 1 }, { idx: 2 }, { idx: 3 }, { idx: 4 }]
     },
     testimonials: {
@@ -307,7 +307,7 @@ const I18N = {
     footer: {
       tag: "Injinerlik aniqligi bilan yasaldi.",
       channels: "Kanallar",
-      rights: "© 2026 Aurelyn. Barcha interfeyslar himoyalangan.",
+      rights: "© 2026 Aurelyn. Barcha huquqlar himoyalangan.",
       sitemap: "Sayt xaritasi",
       legal: "Yuridik"
     }

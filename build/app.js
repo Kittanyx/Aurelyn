@@ -91,12 +91,15 @@ function App() {
   }), /*#__PURE__*/React.createElement(Services, {
     t: t
   }), /*#__PURE__*/React.createElement(Manifesto, {
-    t: t
+    t: t,
+    lang: lang
   }), /*#__PURE__*/React.createElement(Cases, {
     t: t
-  }), /*#__PURE__*/React.createElement(Testimonials, {
-    t: t
-  }), /*#__PURE__*/React.createElement(Contact, {
+  }),
+  /* ===== TESTIMONIALS — TEMPORARILY HIDDEN (uncomment to restore) =====
+  React.createElement(Testimonials, { t: t }),
+  ===== END TESTIMONIALS HIDDEN ===== */
+  /*#__PURE__*/React.createElement(Contact, {
     t: t,
     lang: lang
   }), /*#__PURE__*/React.createElement(Footer, {

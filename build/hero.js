@@ -8,6 +8,13 @@ function Hero({
   t,
   lang
 }) {
+  function renderBrackets(text) {
+    if (!text.includes('[')) return text;
+    return text.split(/(\[|\])/).map(function(part, i) {
+      if (part === '[' || part === ']') return /*#__PURE__*/React.createElement('span', { key: i, className: 'bracket', style: lang === 'ru' ? { position: 'relative', top: -8 } : undefined }, part);
+      return part;
+    });
+  }
   const heroRef = useRefH(null);
   return /*#__PURE__*/React.createElement("section", {
     className: "hero",
@@ -61,6 +68,7 @@ function Hero({
           margin:0;color:#fff;mix-blend-mode:plus-lighter;
         }
         .hero-h1 .stroked{color:transparent;-webkit-text-stroke:2px #fff}
+        .hero-h1 .bracket{color:transparent;-webkit-text-stroke:2px #fff}
         .hero-h1 .row{display:block}
 
         .hero-sub{max-width:480px;color:rgba(255,255,255,.92);font-size:14px;line-height:1.5;margin-top:18px;font-weight:500}
@@ -187,11 +195,13 @@ function Hero({
     className: "hero-h1"
   }, /*#__PURE__*/React.createElement("span", {
     className: "row"
-  }, t.hero.title1), /*#__PURE__*/React.createElement("span", {
-    className: "row stroked"
-  }, t.hero.title2), /*#__PURE__*/React.createElement("span", {
-    className: "row"
-  }, t.hero.title3)), /*#__PURE__*/React.createElement("p", {
+  }, renderBrackets(t.hero.title1)), /*#__PURE__*/React.createElement("span", {
+    className: "row stroked",
+    style: { marginTop: lang === 'ru' ? 14 : lang === 'en' ? 8 : 0 }
+  }, renderBrackets(t.hero.title2)), /*#__PURE__*/React.createElement("span", {
+    className: "row",
+    style: { marginTop: lang === 'ru' ? 14 : lang === 'en' ? 8 : 8 }
+  }, renderBrackets(t.hero.title3))), /*#__PURE__*/React.createElement("p", {
     className: "hero-sub"
   }, t.hero.sub), /*#__PURE__*/React.createElement("div", {
     className: "hero-cta-row"
@@ -208,9 +218,7 @@ function Hero({
       behavior: 'smooth',
       block: 'start'
     })
-  }, t.hero.cta2)), /*#__PURE__*/React.createElement("div", {
-    className: "hero-tags"
-  }, /*#__PURE__*/React.createElement("span", null, t.hero.label1), /*#__PURE__*/React.createElement("span", null, t.hero.label2), /*#__PURE__*/React.createElement("span", null, t.hero.label3))), /*#__PURE__*/React.createElement("div", {
+  }, t.hero.cta2))), /*#__PURE__*/React.createElement("div", {
     className: "hero-shape-wrap"
   }, /*#__PURE__*/React.createElement("div", {
     className: "cube-glow"
